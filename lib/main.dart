@@ -1,3 +1,4 @@
+import 'package:clarapy_test/settings_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -7,16 +8,9 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Hello Clarapy!'),
-        ),
-        body: const Center(
-          child: Text('Hello, Clarapy!'),
-        ),
-      ),
+      home: SettingsPage(),
     );
   }
 }
